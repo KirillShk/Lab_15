@@ -13,17 +13,19 @@ namespace Task
             Console.WriteLine("Введите начальное значение прогрессии и её шаг");
             int a = Convert.ToInt32(Console.ReadLine());
             int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите количество элеметов на вывод");
+            int c = Convert.ToInt32(Console.ReadLine());
             ArithProgression arith = new ArithProgression();
             arith.setStart(a);
             arith.setStep(b);
             // выводим элементы арифмитической прогрессии
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < c; i++)
             {
                 Console.WriteLine("{0}-й элемент арифметической прогрессии: {1}", i+2, arith.getNext());
             }
             arith.reset();
             Console.WriteLine("\n");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < c-1; i++)
             {
                 Console.WriteLine("{0}-й элемент арифметической прогрессии: {1}", i + 2, arith.getNext());
             }
@@ -32,13 +34,13 @@ namespace Task
             geom.setStart(a);
             geom.setStep(b);
             // выводим элементы геометрической прогрессии
-            for(int i = 0; i < 4; i++)
+            for(int i = 0; i < c; i++)
             {
                 Console.WriteLine("{0}-й элемент геометрической прогрессии: {1}", i + 2, geom.getNext());
             }
             geom.reset();
             Console.WriteLine("\n");
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < c-1; i++)
             {
                 Console.WriteLine("{0}-й элемент геометрической прогрессии: {1}", i + 2, geom.getNext());
             }
