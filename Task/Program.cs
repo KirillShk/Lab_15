@@ -18,7 +18,6 @@ namespace Task
             ArithProgression arith = new ArithProgression();
             arith.setStart(a);
             arith.setStep(b);
-            // выводим элементы арифмитической прогрессии
             for (int i = 0; i < c; i++)
             {
                 Console.WriteLine("{0}-й элемент арифметической прогрессии: {1}", i+2, arith.getNext());
@@ -33,7 +32,6 @@ namespace Task
             Console.WriteLine("\n");
             geom.setStart(a);
             geom.setStep(b);
-            // выводим элементы геометрической прогрессии
             for(int i = 0; i < c; i++)
             {
                 Console.WriteLine("{0}-й элемент геометрической прогрессии: {1}", i + 2, geom.getNext());
